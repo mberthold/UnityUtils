@@ -18,5 +18,16 @@ namespace BertisUtils
             return new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
         }
 
+        public static Vector3 TransformSetZ(GameObject obj, float z)
+        {
+            float currentX = obj.transform.position.x;
+            float currentY = obj.transform.position.y;
+   
+
+            Vector3 newPosition = new Vector3(currentX, currentY, z);
+
+            return newPosition;
+        }
+
     }
 }
